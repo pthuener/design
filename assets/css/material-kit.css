@@ -21622,7 +21622,8 @@ select.selectpicker {
 
 .projects-3 .card {
   margin-bottom: 30px;
-  text-align: center;
+  /* text-align: center; */
+  text-align: left;
 }
 
 .projects-3 .category {
