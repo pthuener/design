@@ -9527,8 +9527,8 @@ button:focus {
 .btn,
 .btn.btn-default {
   color: #fff;
-  background-color: #999999;
-  border-color: #999999;
+  background-color: rgb(90, 90, 90);
+  border-color: rgb(90, 90, 90);
   box-shadow: 0 2px 2px 0 rgba(153, 153, 153, 0.14), 0 3px 1px -2px rgba(153, 153, 153, 0.2), 0 1px 5px 0 rgba(153, 153, 153, 0.12);
 }
 
@@ -9596,7 +9596,7 @@ button:focus {
 .open>.btn.dropdown-toggle.bmd-btn-icon,
 .open>.btn.btn-default.dropdown-toggle.bmd-btn-icon {
   color: inherit;
-  background-color: #999999;
+  background-color: rgb(90, 90, 90);
 }
 
 .open>.btn.dropdown-toggle.bmd-btn-icon:hover,
@@ -9612,16 +9612,16 @@ button:focus {
 .btn.btn-default.disabled.focus,
 .btn.btn-default:disabled:focus,
 .btn.btn-default:disabled.focus {
-  background-color: #999999;
-  border-color: #999999;
+  background-color: rgb(90, 90, 90);
+  border-color: rgb(90, 90, 90);
 }
 
 .btn.disabled:hover,
 .btn:disabled:hover,
 .btn.btn-default.disabled:hover,
 .btn.btn-default:disabled:hover {
-  background-color: #999999;
-  border-color: #999999;
+  background-color: rgb(90, 90, 90);
+  border-color: rgb(90, 90, 90);
 }
 
 .btn:focus,
@@ -9636,7 +9636,7 @@ button:focus {
 .btn.btn-link,
 .btn.btn-default.btn-link {
   background-color: transparent;
-  color: #999999;
+  color: rgb(90, 90, 90);
   box-shadow: none;
 }
 
@@ -9647,14 +9647,14 @@ button:focus {
 .btn.btn-default.btn-link:focus,
 .btn.btn-default.btn-link:active {
   background-color: transparent;
-  color: #999999;
+  color: rgb(90, 90, 90);
 }
 
 .btn.btn-white,
 .btn.btn-white:focus,
 .btn.btn-white:hover {
   background-color: #fff;
-  color: #999999;
+  color: rgb(90, 90, 90);
 }
 
 .btn.btn-white.btn-link {
@@ -12236,7 +12236,7 @@ form {
 .is-focused .checkbox-inline,
 .switch label,
 .is-focused .switch label {
-  color: #999999;
+  color: rgb(90, 90, 90);
 }
 
 .radio label label:has(input[type=radio][disabled]),
@@ -12329,12 +12329,12 @@ fieldset[disabled] .switch label:focus,
 fieldset[disabled] .is-focused .switch label,
 fieldset[disabled] .is-focused .switch label:hover,
 fieldset[disabled] .is-focused .switch label:focus {
-  color: #999999;
+  color: rgb(90, 90, 90);
 }
 
 [class^='bmd-label'],
 [class*=' bmd-label'] {
-  color: #999999;
+  color: rgb(90, 90, 90);
 }
 
 .form-control,
@@ -12379,7 +12379,7 @@ fieldset[disabled][disabled] .form-control,
   width: 100%;
   margin-top: 0.25rem;
   font-size: 80%;
-  color: #999999;
+  color: rgb(90, 90, 90);
 }
 
 .is-focused .valid-tooltip {
@@ -12401,14 +12401,14 @@ fieldset[disabled][disabled] .form-control,
 .is-focused .form-control.is-valid,
 .was-validated .is-focused .custom-select:valid,
 .is-focused .custom-select.is-valid {
-  border-color: #999999;
+  border-color: rgb(90, 90, 90);
 }
 
 .was-validated .is-focused .form-control:valid:focus,
 .is-focused .form-control.is-valid:focus,
 .was-validated .is-focused .custom-select:valid:focus,
 .is-focused .custom-select.is-valid:focus {
-  border-color: #999999;
+  border-color: rgb(90, 90, 90);
   box-shadow: 0 0 0 0.2rem rgba(153, 153, 153, 0.25);
 }
 
@@ -12425,7 +12425,7 @@ fieldset[disabled][disabled] .form-control,
 
 .was-validated .is-focused .form-check-input:valid~.form-check-label,
 .is-focused .form-check-input.is-valid~.form-check-label {
-  color: #999999;
+  color: rgb(90, 90, 90);
 }
 
 .was-validated .is-focused .form-check-input:valid~.valid-feedback,
@@ -12437,7 +12437,7 @@ fieldset[disabled][disabled] .form-control,
 
 .was-validated .is-focused .custom-control-input:valid~.custom-control-label,
 .is-focused .custom-control-input.is-valid~.custom-control-label {
-  color: #999999;
+  color: rgb(90, 90, 90);
 }
 
 .was-validated .is-focused .custom-control-input:valid~.custom-control-label::before,
@@ -12464,7 +12464,7 @@ fieldset[disabled][disabled] .form-control,
 
 .was-validated .is-focused .custom-file-input:valid~.custom-file-label,
 .is-focused .custom-file-input.is-valid~.custom-file-label {
-  border-color: #999999;
+  border-color: rgb(90, 90, 90);
 }
 
 .was-validated .is-focused .custom-file-input:valid~.custom-file-label::before,
@@ -12490,7 +12490,7 @@ fieldset[disabled][disabled] .form-control,
 }
 
 .is-focused .bmd-label-placeholder {
-  color: #999999;
+  color: rgb(90, 90, 90);
 }
 
 .is-focused .form-control {
@@ -14729,7 +14729,7 @@ footer .pull-center {
   min-width: 30px;
   height: 30px;
   line-height: 30px;
-  color: #999999;
+  color: rgb(90, 90, 90);
   font-weight: 400;
   font-size: 12px;
   text-transform: uppercase;
@@ -14741,12 +14741,12 @@ footer .pull-center {
 .pagination>.page-item>.page-link:focus,
 .pagination>.page-item>span:hover,
 .pagination>.page-item>span:focus {
-  color: #999999;
+  color: rgb(90, 90, 90);
 }
 
 .pagination>.page-item.active>a,
 .pagination>.page-item.active>span {
-  color: #999999;
+  color: rgb(90, 90, 90);
 }
 
 .pagination>.page-item.active>a,
@@ -14901,7 +14901,7 @@ footer .pull-center {
 }
 
 .info .icon {
-  color: #999999;
+  color: rgb(90, 90, 90);
 }
 
 .info .icon>i {
@@ -14914,7 +14914,7 @@ footer .pull-center {
 }
 
 .info p {
-  color: #999999;
+  color: rgb(90, 90, 90);
 }
 
 .info-horizontal .icon {
@@ -15085,7 +15085,7 @@ h2.title {
 .description,
 .card-description,
 .footer-big p {
-  color: #999;
+  color: rgb(90, 90, 90);
 }
 
 .text-warning {
@@ -15113,7 +15113,7 @@ h2.title {
 }
 
 .text-gray {
-  color: #999999 !important;
+  color: rgb(90, 90, 90) !important;
 }
 
 .space {
@@ -18091,7 +18091,7 @@ thead.thead-inverse th,
 }
 
 .media p {
-  color: #999999;
+  color: rgb(90, 90, 90);
   font-size: 1rem;
   line-height: 1.6em;
 }
@@ -18113,7 +18113,7 @@ thead.thead-inverse th,
 }
 
 .card .card-category:not([class*="text-"]) {
-  color: #999999;
+  color: rgb(90, 90, 90);
 }
 
 .card .card-category {
@@ -18167,7 +18167,7 @@ thead.thead-inverse th,
 }
 
 .card .card-footer .stats {
-  color: #999999;
+  color: rgb(90, 90, 90);
 }
 
 .card .card-footer .stats .material-icons {
@@ -18734,7 +18734,7 @@ thead.thead-inverse th,
 }
 
 .card-pricing ul li {
-  color: #999999;
+  color: rgb(90, 90, 90);
   text-align: center;
   padding: 12px 0;
   border-bottom: 1px solid rgba(153, 153, 153, 0.3);
@@ -21602,7 +21602,7 @@ select.selectpicker {
 }
 
 .projects-2 .category {
-  color: #999999;
+  color: rgb(90, 90, 90);
   margin-top: 5px;
 }
 
