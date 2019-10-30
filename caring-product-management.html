@@ -1,0 +1,642 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+      Peter Thuener | Product Designer
+    </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  <link href="assets/css/material-kit.css?v=2.1.1" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="assets/demo/demo.css" rel="stylesheet" />
+  <link href="assets/demo/vertical-nav.css" rel="stylesheet" />
+</head>
+
+<body class="blog-post sidebar-collapse">
+    <nav class="navbar navbar-color-on-scroll navbar-transparent    fixed-top  navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
+        <div class="container">
+          <div class="navbar-translate">
+            <a class="navbar-brand" href="index.html">
+            <strong>Peter Thuener</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <!-- <li class="active nav-item">
+                    <a href="index.html" class="active nav-link">
+                      <i class="material-icons">home</i> Home
+                    </a>
+                  </li> -->
+                  <li class="nav-item">
+                      <a href="about-me.html" class="nav-link">
+                     About me
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="process.html" class="nav-link">
+                       My process
+                        </a>
+                      </li>
+                  <!-- <li class="nav-item">
+                      <a href="#pablo" class="nav-link">
+                        <i class="material-icons">account_circle</i> Profile
+                      </a>
+                    </li> -->
+              <!-- <li class="dropdown nav-item">
+                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Sexy Visual
+                </a>
+                <div class="dropdown-menu dropdown-with-icons">
+                    <a href="../sections.html#headers" class="dropdown-item">
+                     View all
+                    </a>
+                  <a href="../sections.html#headers" class="dropdown-item">
+                    <i class="material-icons">file_copy</i> GoFormz
+                  </a>
+                  <a href="../sections.html#features" class="dropdown-item">
+                    <i class="material-icons">favorite</i> Pue Health
+                  </a>
+                  <a href="../sections.html#blogs" class="dropdown-item">
+                    <i class="material-icons">accessibility</i> Caring.com
+                  </a>
+                </div>
+              </li> -->
+              <!-- <li class="dropdown nav-item">
+                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                 more neat things
+                </a>
+                <div class="dropdown-menu dropdown-with-icons">
+                  <a href="../examples/about-us.html" class="dropdown-item">
+                    <i class="material-icons">account_balance</i> Linkedin
+                    Linkedin
+                  </a>
+                  <a href="../examples/blog-post.html" class="dropdown-item">
+                  Dribbble
+                  </a>
+                  <a href="../examples/blog-posts.html" class="dropdown-item">
+                   Github
+                  </a>
+                </div>
+              </li> -->
+              <!-- <li class="button-container nav-item iframe-extern">
+                <a href="https://www.creative-tim.com/product/material-kit-pro?ref=presentation" target="_blank" class="btn  btn-rose   btn-round btn-block">
+                  <i class="material-icons">shopping_cart</i> Buy Now
+                </a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+  <div class="page-header header-filter" data-parallax="true" style="background-image: url('assets/img/public-forms-bg.jpg');">
+    <div class="container">
+      <div class="row">
+        <div class="header-fix-caring">
+          <div class="col-md-12 ml-auto mr-auto text-center">
+            <h1 class="title">Pioneering Caring.com's conversion optimization platform</h1>
+            <h4>Pivoting off of a subscription model to lead gen and scaling the company's culture and software through aquisition and beyond</h4>
+            <br>
+            <a href="#process" class="btn btn-rose btn-round btn-lg">
+            View Project
+            </a>
+          </div>
+        </div>  
+      </div>
+      <div class="row">
+        <div class="col-md-12 ml-auto mr-auto text-center" style="padding-top: 30px;">
+           <img src="assets/img/caring-hero.png" width="100%" style="display: block;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main main-raised-fix" id="process">
+      <!-- <div class="row">
+          <div class="col-md-6 ml-auto mr-auto">
+            <div class="card card-plain card-blog">
+              <div class="card-header card-header-image">
+                <a href="#pablo">
+                  <img class="img img-raised" src="./assets/img/bg5.jpg">
+                </a>
+              </div>
+          </div>
+      </div>
+    </div>    -->
+      <div class="features-4" style="padding-top: 0px;">
+          <div class="row">
+            <div class="col-lg-4 col-md-8 ml-auto">
+              <div class="info info-horizontal" style="max-width: 400px;">
+                <div class="icon icon-info">
+                  <i class="material-icons">dynamic_feed  </i>
+                </div>
+                <div class="description">
+                  <h4 class="info-title">Overview</h4>
+                  <p>Caring.com is the second larges senior living referral service, designed for caregivers seeking information and support as they care for aging loved ones. There are several facets and products to the business. <br><br>I designed and product managed everything from our email marketing program, sem marketing program, and SaaS products.  </p>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-lg-4 col-md-12">
+              <div class="phone-container">
+                <img src="./assets/img/sections/iphone2.png">
+              </div>
+            </div> -->
+            
+            <div class="col-lg-3 col-md-12 mr-auto">
+              <div class="info info-horizontal">
+                <div class="icon icon-primary">
+                  <i class="material-icons">group</i>
+                </div>
+                <div class="description">
+                  <h4 class="info-title">My Role</h4>
+                  <p><span style="font-weight: 800;">Design Director</span>
+                    <br>
+                     Product Management, Product Design, Marketing Management, Conversion Optimization</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials-2 section-dark" style="padding-top: 50px;">
+            <div class="container">
+                  <div class="row">
+                      <div class="col-md-8 ml-auto mr-auto">
+                        <h3 class="title">The Problem</h3>
+                        <p style="color: #fff;">The company was struggling to gain customers under a content-marketing driven subscription model. Instead of being the source of senior living information, they wanted to become the largest referral service for assisted living and in-home care. To do this, they would need a specialist in conversion optimization to help them build a successful marketing funnel.<br><br>
+                          They also needed to overhaul several products to appeal to their less techicnally-savvy demographic.
+                            <!-- We had a beta product called public share that the engineers built without any ux guidance. With Public Share anyone with an account can send and distribute as many forms as they please. Instead of tying the account to a paid subscription they would be charged in buckets based on how many form completions they receive, similar to survey monkey.
+                            <br><br>
+                           Public Share was hidden behind a feature flag in a very fractured beta state.<br><br> <span style="font-size: 16px; font-weight: bold;"> My 
+               objective was to rebuild Public Forms to be a major driver of revenue for GoFormz in 2020.</span> -->
+                        </p>
+                      </div>
+
+                     
+                      
+                    </div>
+                  </div>
+          </div>
+
+            <!-- Conceptualization -->
+            <div class="testimonials-2 section">
+                <div class="container">
+                      <div class="row">
+                          <div class="col-md-8 ml-auto mr-auto">
+                              <h3 class="title">
+                             Assessing assets from the subscription model</h3>
+                                  <p>As mentioned all of Caring.com's previous concent marketing was educational. "Click to find personal care for your loved ones," "5 ways you can help a family member with dementia."</p>
+                                  <p>While this information is definitely helpful, it doesn't drive clicks or action. You can Google this information for free. </p>
+                                  <p>My idea was to create clearer call to actions that would drive clicks and conversion. Instead of click to receive personalized care, the message should have a value proposition. More on that later.</p>
+                                  
+                              <div class="container">
+                                <div class="row">                                  
+                                    <div class="col-md-12" style="padding-top: 80px;">
+                                      <img class="img-raised rounded img-fluid" alt="Raised Image" src="./assets/img/caring/old-page.png">
+                                    </div> 
+                                      <div class="col-md-12" style="padding-top: 20px;">
+                                          <img class="img-raised rounded img-fluid" alt="Raised Image" src="./assets/img/caring/suggests.png">
+                                        </div> 
+                                        <div style="padding-top: 50px;">
+                                        <h3 class="title">
+                                         Building a conversion funnel from scratch</h3>
+                                        <p>Caring.com had never conducted an A/B test of any of their landing pages, emails, or software UI. My role extended far beyond just designing landing pages and emails. I surveyed testing platforms, colaborated with engineering, and built systems to track new leads.
+                                          </p>
+                                          <h5 class="title">Engineering will build an A/B testing tool.</h5>
+                             
+                                            <p>Will build an A/B testing tool. We conducted tons of resarch on tools available and concluded that there was no way to conduct a clean test with tools such as Optimizely. At that time, Optimizely used javascript to control image and copy tests. There would be a flash that would display tested content over the other. How would we know what the user acted on to convert? Image test A or B?
+                                              </p>
+                                              <p>Our solution was to build  an in-house URL splitter where we could route specific percentages of traffic to different urls. We could also control which segment, service, (AL or in-home-care), or demographic goes to which landing page so we could build refined pages for different cohorts.
+                                                </p>
+                                                <p>Our solution was to build  an in-house URL splitter where we could route specific percentages of traffic to different urls. We could also control which segment, service, (AL or in-home-care), or demographic goes to which landing page so we could build refined pages for different cohorts.
+                                                  </p>
+                                                  
+                                          <br>
+                                          <!-- <h6 class="text-muted">Caring's testing had to including the follow:</h6>
+                                          <ul style="font-size: 14px;">                        
+                                            <li>A </li>
+                                            <li>Give the public share a unique name.</li>
+                                            <li>Define shared fields and set an expiration date.</li>
+                                             <li>Copy or email the form to the desired audience.</li>
+                                          </ul>           -->
+                                          <h5 class="title" style="margin-top: 0px;">What deserves to be tested?</h5>
+                             
+                                          <p>I was used to getting a directive from my manager to "come up with a bunch of designs and we'll rifle them through our tool". This time around was very different. Andy and I were very calculated about what we wanted to design and build so we woudln't expend resources on tests that may potentially fail.
+                                            </p>
+                                            <p>We assigned an optimum cost per click based on channel, and what it would cost for them to move down the funnel. This would help us determine what to build for which segments, and at what point in the funnel it would be best to spend design and engineering resources.
+                                              </p>
+                                        <br>
+                                        <div class="col-md-12">
+                                            <img class="img-raised rounded img-fluid" alt="Raised Image" src="./assets/img/caring/models.png">
+                                          </div>      
+                                                                                 
+                                        </div>  
+                                </div>
+                              </div>
+                          </div>   
+                      </div>
+                  </div>
+             </div>     
+             <!-- end of conceptualization -->
+
+       
+
+            <div class="blogs-3" style="background-color: #f5f5f5;">
+                <div class="container">         
+                  <div class="row">
+                    <div class="col-md-8 ml-auto mr-auto">
+                      <h3 class="title">
+                          What information are our potential customers seeking?</h3>
+                      <p>Now that our systems were in the right place I built a survey that users could access through the confirmation page of our previous landing pages to unveil what they really wanted when they visted a site like caring.com. Did theyd want educational content? Or did they want to move mom into a home asap? Did they know what they were looking for in an assisted living home? Or do they need guidance? </p>
+                      <div class="card card-plain card-blog">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="card-header card-header-image">
+                              <img src="./assets/img/faces/karen.jpg">
+                            </div>
+                          </div>
+                          <div class="col-md-8" style="padding-top: 40px;">
+                              <p>
+                                  "Educational content is imortant but I want information right away. I have heard assisted living is expensive. My husband and I don't have very much saved but we want to make sure my mom has a great end-of-life experience."
+                                </p>
+                            <!-- <p>
+                                “When I enter the empty state I have no idea what I’m supposed to do without the guidance of my account manager"
+                            </p> -->
+                            <p class="author">
+                                <b>Joyce Mccord</b>
+                              </a>| Baby Boomer
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card card-plain card-blog">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="card-header card-header-image">
+                              <a href="#pablo">
+                                <img class="img img-raised" src="./assets/img/faces/mark.jpg">
+                              </a>
+                            </div>
+                          </div>
+                          <div class="col-md-8" style="padding-top: 40px;">
+                              <p>
+                                 "My dad and I are super close. I want to make sure he has the best assisted living home possible. I just have no idea what the best places are around me. I wish there were reviews and photos like Yelp."
+
+                              </p>
+                            <!-- <p>
+                                “When I enter the empty state I have no idea what I’m supposed to do without the guidance of my account manager"
+                            </p> -->
+                            <p class="author">
+                                <b>Mark Wylie</b>
+                              </a>| Baby Boomer
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="section section-comments" style="background-color: #f5f5f5;">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-8 ml-auto mr-auto">
+                       
+                            <h3 class="title">
+                                User Profiles</h3>
+                            <p>The research made it evident how different users would use the Public Forms differently. To cater to this, I categorized them into three user profiles based on their goals and tasks</p>
+                            <br>
+                      <div class="media-area">
+                        <div class="media">
+                          <a class="float-left" href="#pablo">
+                            <div class="avatar">
+                              <img class="media-object" src="assets/img/faces/card-profile6-square.jpg" alt="...">
+                            </div>
+                          </a>
+                          <div class="media-body">
+                            <h4 class="media-heading">Elementary School Teacher
+                              <br>
+                              <small>Highly involved with community    |  Bakesale fundraising champion   |   Bachelor’s in Childhood Development & Psychology | <br><strong>Uses google forms and google sheets</strong>
+                                </small>
+                            
+                            </h4>
+                            <h6 class="text-muted">Tasks</h6>
+                            <ul style="font-size: 14px;">
+                      
+                                <li> Wants to author field trip permission forms</li>
+                                   <li>Wants to easily tally how many parents will be available to assist on field trips</li>
+                                   <li>Price sensitive. Would only be sending out these forms 2x a quarter to ~40 students
+                                   </li>
+                              </ul>
+                          </div>
+                        </div>
+                        <div class="media">
+                            <a class="float-left" href="#pablo">
+                              <div class="avatar">
+                                <img class="media-object" src="assets/img/faces/card-profile1-square.jpg" alt="...">
+                              </div>
+                            </a>
+                            <div class="media-body">
+                              <h4 class="media-heading">Office Manager at an urgent care clinic
+                                <br>
+                                <small>Familiar with SaaS systems    | In their 40’s   |  15  years of office management experience |  A.A. in Business<br><strong>Uses box, quickbooks, google calendar, gusto</strong>
+                                  </small>
+                              
+                              </h4>
+                              <h6 class="text-muted">Tasks</h6>
+                              <ul style="font-size: 14px;">
+                        
+                                  <li> Wants to build HIPAA Compliant forms</li>
+                                     <li>Wants to save the customer time by having them fill out all of their medical data online instead of in the office on a clipboard.
+                                      </li>
+                                     <li>Wants to save all customer data in the cloud instead of in a file cabinet. 
+
+                                     </li>
+                                </ul>
+                            </div>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   </div> -->
+                   <!-- end media-post -->
+
+                   <!-- Conceptualization -->
+                   <div class="testimonials-2 section">
+                      <div class="container">
+                            <div class="row">
+                                <div class="col-md-8 ml-auto mr-auto">
+                                    <h3 class="title">
+                                   Time to test, (finally)!</h3>
+                                        <p>After several sprints of Product Management and setup I was aching to design something.</p>
+                                        <p>The higher-ups were apprehensive to go against the grain, even given the user research. We would test two variants against the control.
+                                          </p>
+                                          <br>
+                                          <h6 class="text-muted">Control</h6>
+                                          <ul style="font-size: 14px;">                        
+                                            <li>Headline: Get FREE Assisted Living Information</li>
+                                            <li>Image: Lavendar Flowers</li>
+                                            <li>Form fields: Long list</li>
+                                          </ul>   
+                                          <h6 class="text-muted">Test A</h6>
+                                          <ul style="font-size: 14px;">                        
+                                            <li>Headline: Get FREE Assisted Living Information</li>
+                                            <li>Image: Seniors having fun</li>
+                                            <li>Form fields: Long list</li>
+                                          </ul>     
+                                          <h6 class="text-muted">Test B</h6>
+                                          <ul style="font-size: 14px;">                        
+                                            <li>Find Assisted Living Costs in {location}</li>
+                                            <li>Image: A map of AL homes near them</li>
+                                            <li>Form fields: 2 step flow. Step 1 would capture zip code, who they were looking for, and email address. If they abandoned the page on step two at least we could send an abandonment email.</li>
+                                          </ul>              
+                                          <h5 class="title">
+                                             The landing page I designed and built (in HAML) was a landslide victory. The previous landing page had a conversion rate of 6.64%. The new landing page, deemed "Costs" Had a 12.6% conversion rate.</h5>
+                                                 
+                                    <div class="container">
+                                      <div class="row">  
+                                          <div class="col-md-12" style="padding-top: 80px;">
+                                              <img class="img-raised rounded img-fluid" alt="Raised Image" src="./assets/img/caring/wire.png">
+                                            </div>                                 
+                                          <div class="col-md-12" style="padding-top: 80px;">
+                                            <img class="img-raised rounded img-fluid" alt="Raised Image" src="./assets/img/caring/old-page.png">
+                                          </div> 
+                                          <div class="col-md-12" style="padding-top: 20px;">
+                                              <img class="img-raised rounded img-fluid" alt="Raised Image" src="./assets/img/caring/new-page.png">
+                                            </div> 
+                                           
+                                           
+                                      </div>
+                                    </div>
+                                </div>   
+                            </div>
+                        </div>
+                   </div>     
+                   <!-- end of conceptualization -->
+
+                            <!-- The solution -->
+                            <div class="section section-comments" style="margin-top: 80px; background-color: #f5f5f5;">
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-md-8 ml-auto mr-auto text-center">
+                                            <h3 class="title">
+                                                Follow up after initial conversion</h3>
+                                            <p>After someone signed up for our service on the landing page but didn't respond to our first phone call I built a drip campaign. I designed and built emails and deployed them through SendGrid. We tested email design here as well, varying templates based on UTM codes. I would track these codes in a spreadsheet to find the optimial design, and best date and time to send to receive maximum conversion.
+                                              </p>
+                                              <br>
+                                            <div class="col-md-12" style="padding-top: 20px;">
+                                                <img class="img-raised rounded img-fluid" alt="Raised Image" src="./assets/img/caring/tracking.png">
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                          <!-- end of the solution -->
+                          <!-- enhanced workflow -->
+                          <div class="testimonials-2 section">
+                              <div class="container">
+                                  <div class="row">
+                                      <div class="col-md-8 ml-auto mr-auto">  
+                                        <h3 class="title">Moving into SaaS and Product Management</h3>
+                                        <p>This was an exciting time for me. After a few years of focusing on conversion I was granted the opportunity to dive into full-stack product design. The CEO and Director of Product and I would have quarterly planning meetins to disucss high-level business objectives. It was up to him and I to define and build viable products to solve these problems.</p>
+                                        <p><strong>I love product management</strong>. I was involved in everything from identifying the epic, breaking it down into stories, pointing these stories, and writing specs for engineers and even myself, since I was still the primary UX/UI designer. Below is a summary of some of the products I worked on.</p>
+                                       
+                                        <h4 class="title">The Partner Portal and Move-in Reporting Tool</h4>
+                                        <ul style="font-size: 14px;">                        
+                                            <li>View leads complete with customer profiles, contact history, and contact information</li>
+                                            <li>The ability to update their rates which would update live on our providers page</li>
+                                            <li>The ability to report move-ins</li>
+                                          </ul>     
+                                        
+                                       
+                                         <div class="container" style="#">
+                                           <div class="row">                                  
+                                            <div class="col-md-12 ml-auto mr-auto" style="padding-top: 20px;">
+                                              <img class="img-raised rounded img-fluid" alt="Raised Image" src="./assets/img/caring/move-report.jpg">
+                                              </div> 
+                                            <div class="col-md-6" style="padding-top: 20px;">
+                                              <img class="img-raised rounded img-fluid" alt="Raised Image" src="./assets/img/caring/portal-wire-1.png">
+                                            </div>
+                                            <div class="col-md-6" style="padding-top: 20px;">
+                                              <img class="img-raised rounded img-fluid" alt="Raised Image" src="./assets/img/caring/portal-wire-2.png">
+                                            </div>
+                                            <div class="col-md-12" style="padding-top: 20px;">
+                                              <img class="img-raised rounded img-fluid" alt="Raised Image" src="./assets/img/caring/performance-mobile.jpg">
+                                            </div>          
+                                            <h4 class="title">An entire call center! (We called it Contact)</h4>
+                                            <p>Our current software, 5-9, was buggy and had frequent outages. It also did not link directly to our in-house CRM, talk. We wanted to add a Salesforce-like layer to expedite the Agent workflow. This product was 6 months in making. It had the agent ui where each sales individual could track their calls, set dispositions, and status, and more impressively, the manager ui, where managers could track things like:  </p>
+                                                <ul style="font-size: 14px;">                        
+                                                    <li>
+                                                        Agent state - online, offline, on break</li>
+                                                    <li>State duration - how long has the agent been on break or on a call</li>
+                                                    <li>Queues - what channels agents were currently assigned to</li>
+                                                    <li>Tactics - assign a method to the agent based on seniority, cold calling, follow up, etc</li>
+                                                    <li>Skills - the ability to assign agents to specific traffic channels</li>
+                                                  </ul>  
+                                       
+           
+
+                                           
+                                        
+                                                  <br>
+                                           
+                                             <div class="container" style="#">
+                                               <div class="row">                                  
+                                                <div class="col-md-12 ml-auto mr-auto" style="padding-top: 20px;">
+                                                  <img class="img-raised rounded img-fluid" alt="Raised Image" src="./assets/img/caring/contact-wire.png">
+                                                  </div> 
+                                                  <div class="col-md-12 ml-auto mr-auto" style="padding-top: 20px;">
+                                                      <img class="img-raised rounded img-fluid" alt="Raised Image" src="./assets/img/caring/filter.jpg">
+                                                      </div> 
+                                                      <div class="col-md-12 ml-auto mr-auto" style="padding-top: 20px;">
+                                                          <img class="img-raised rounded img-fluid" alt="Raised Image" src="./assets/img/caring/skills.jpg">
+                                                          </div> 
+                                                     </div>    
+                                           </div>
+                                        </div>                
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- end enhanced workflow -->
+                    
+                          
+                           
+                           <!-- Data measure -->
+                           <div class="testimonials-2 section" style="margin-top: 50px; background-color: #f5f5f5;">
+                              <div class="container">
+                                  <div class="row">
+                                      <div class="col-md-8 ml-auto mr-auto" style="padding-bottom: 80px; padding-top: 50px;">  
+                                        <h3 class="title">Measuring Success</h3>  
+                                        <p>I had a hgue impact at this startup. The company had a beautiful social mission. I learned a ton. Here are some metrics gathered from my time at caring.com.</p>
+                                          <br>
+                                         <div class="container">
+                                           <div class="row">                                  
+                                            <div class="col-md-3 ml-auto mr-auto" style="padding-top: 20px;">
+                                             <h2>14.1%</h2>
+                                             <p>Best performing landing page converison rate</p>
+                                              </div> 
+                                              <div class="col-md-3 ml-auto mr-auto" style="padding-top: 20px;">
+                                                  <h2>100%</h2>
+                                                  <p>Adoption rate of portal and contact </p>
+                                                  </div>
+                                                  <div class="col-md-3 ml-auto mr-auto" style="padding-top: 20px;">
+                                                      <h2>2016</h2>
+                                                      <p>Acquired by Bankrate</p>
+                                                      </div>
+                                              <div class="col-md-3 ml-auto mr-auto" style="padding-top: 20px;">
+                                                  <h2>22oz</h2>
+                                                  <p>Ribeye I ate with the CEO of Bankrate</p>
+                                                  </div>                  
+                                           </div>
+                                        </div>                
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                           <!-- end data mesaure -->
+                           
+        </div>
+     </div>
+  </div>
+ 
+  <footer class="footer footer-default">
+      <div class="container">
+        <nav class="float-left">
+          <ul>
+            <li>
+              <a href="index.html">
+               HOME
+              </a>
+            </li>
+            
+            <li>
+              <a href="about-me.html">
+              About me
+              </a>
+            </li>
+            <li>
+              <a href="process.html">
+                My process
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="copyright float-right">
+          &copy;
+          <script>
+            document.write(new Date().getFullYear())
+          </script> - Peter Thuener
+        </div>
+      </div>
+    </footer>
+  <!--   Core JS Files   -->
+  <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+  <script src="assets/js/plugins/moment.min.js"></script>
+  <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+  <script src="assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
+  <script src="assets/js/plugins/bootstrap-tagsinput.js"></script>
+  <!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+  <script src="assets/js/plugins/bootstrap-selectpicker.js" type="text/javascript"></script>
+  <!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+  <script src="assets/js/plugins/jasny-bootstrap.min.js" type="text/javascript"></script>
+  <!--	Plugin for Small Gallery in Product Page -->
+  <script src="assets/js/plugins/jquery.flexisel.js" type="text/javascript"></script>
+  <!-- Plugins for presentation and navigation  -->
+  <script src="assets/demo/modernizr.js" type="text/javascript"></script>
+  <script src="assets/demo/vertical-nav.js" type="text/javascript"></script>
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- Js With initialisations For Demo Purpose, Don't Include it in Your Project -->
+  <script src="assets/demo/demo.js" type="text/javascript"></script>
+  <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+  <script src="assets/js/material-kit.js?v=2.1.1" type="text/javascript"></script>
+</body>
+
+</html>
