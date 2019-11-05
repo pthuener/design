@@ -1020,14 +1020,14 @@ pre code {
 @media (min-width: 1200px){
   .header-fix {
     padding-top: 600px;
-    padding-left: 175px;
+    margin: 0 auto;
   } 
 }
 
 @media (min-width: 1200px){
   .header-fix-connected {
     padding-top: 600px;
-    padding-left: 150px;
+    margin: 0 auto;
   } 
 }
 
