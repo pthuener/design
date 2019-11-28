@@ -442,8 +442,8 @@ $(document).ready(function(){
                     <div class="col-md-8 ml-auto mr-auto">
                        
                             <h3 class="title">
-                                User Profiles</h3>
-                            <p>Based on the data above I created two user personas that would leverage and use this app.</p>
+                                User Profile</h3>
+                            <p>Based on the data above I defined the target user as a middle-aged affluent male.</p>
                             <br>
                       <div class="media-area">
                         <div class="media">
@@ -464,12 +464,11 @@ $(document).ready(function(){
                       
                                 <li>Hates having to google a shop then call it</li>
                                    <li>Type of bike is very imporant</li>
-                                   <li>Hates entering credit card info
-                                   </li>
+                                   <li>Hates entering credit card info</li>
                               </ul>
                           </div>
                         </div>
-                        <div class="media">
+                        <!-- <div class="media">
                             <a class="float-left" href="#pablo">
                               <div class="avatar">
                                 <img class="media-object" src="assets/img/faces/card-profile6-square.jpg" alt="...">
@@ -493,7 +492,7 @@ $(document).ready(function(){
                                      </li>
                                 </ul>
                             </div>
-                          </div>
+                          </div> -->
                           </div>
                         </div>
                       </div>
@@ -507,44 +506,68 @@ $(document).ready(function(){
                             <div class="row">
                                 <div class="col-md-8 ml-auto mr-auto">
                                     <h3 class="title">
-                                  Getting started</h3>
-                                        <p>The first step was to tear apart the old design and build a new user flow that made more sense. Previously the user would be created with nothing but an empy modal and a brief sentence describing the functionality. The primary cta placement made no sense.</p>
-                                        <p>I assembled a panel of customers currently using the beta product. After a few user walk throughs the success rate of finding and creating the public share took over 10 seconds. Assuming the user was able to figure out where to start they then proceeded into modal hell. Selecting the fields you want to share with the customer and selecting an experiation date for the public form was disasterous. 
+                                  Defining the workflow</h3>
+                                        <!-- <p>To break down the task, I drafted a story of a user called Arun who booked his bike through Giri.</p> -->
+                                        <p>MTB Dad is a leisure biking enthusiast traveling to Whistler. He decided to book a bike for a weekend trip with his friends. He used MTB Hero to locate the best bike shop in the region, procure the bike he wanted, and decided to use paypal to reserve the bike.
                                           </p>
-                                          <p>The final step of sending and sharing a public form may have been the most confusing. Instead of a dashboard all of your public shares were collected as a list in the modal below.
-                                            </p>
+                                          <br>
+                                          <h6 class="text-muted">I found that MTB Dad's journey could be achieved in a few easy steps:</h6>
+                                          <ol style="font-size: 14px;">  
+                                              <li>Login &amp; Signup</li>                      
+                                            <li>Define where to demo the bike from</li>
+                                            <li>Schedule a time and date to demo the bike</li>
+                                            <li>Browse and select a bike</li>
+                                            <li>Easily pay for the bike</li>
+                                             <li>Browse popular trails near the location of pick up or in a defined area</li>
+                                          </ol>          
+                                       
                                     <div class="container">
                                       <div class="row">       
-                                          <div class="col-md-12" style="padding-top: 80px;">
-                                              <img class="img-raised rounded img-fluid" alt="Raised Image" src="./assets/img/ugly-2.png">
-                                            </div>         
-                                            <div class="col-md-12" style="padding-top: 20px;">
-                                                <img class="img-raised rounded img-fluid" alt="Raised Image" src="./assets/img/ugly-1.png">
-                                              </div>                    
                                           <div class="col-md-12" style="padding-top: 20px;">
-                                            <img class="img-raised rounded img-fluid" alt="Raised Image" src="./assets/img/ugly-3.png">
-                                          </div> 
-                                         
+                                              <img class="img-raised rounded img-fluid" alt="Raised Image" src="./assets/img/mtb-workflow.jpg">
+                                            </div>         
+                                        
                                            
                                               <div style="padding-top: 50px;">
                                               <h3 class="title">
-                                                Task analysis, conceptualization and new workflows</h3>
-                                              <p>I started whiteboarding and wireframing the information architecture for new use cases. We had the exciting opportunity of deviating a bit from the company styleguide. The reason for this affordance was that our founder was refactoring the entire webapp from node.js to react. While I was excited to create new symbols and components I faced challenges stemming from respecting the current styleguide while creating new more modern pieces that fit withing our existing style framework. </p>
-                                                <p>Before moving on to high-fidelity comps I created two interaction models. One was an MVP, what I know we can build within an accurate timeline with the correctly pointed stories. The other is a nice-to-have. Allowing engineers to pull-in side features when and if they have time. This helped avoid feature creep towards the end of the epic.
-                                                </p>
-                                                <p>Once the beta product was in place we executed task analysis and user testing. We kept the user journey and task analysis pretty simple. Create a public share, fill out the form on your device, then create a basic report. I observed the sales team execute the tasks individually. Our jr. account managers had really good feedback regarding what we can do to optimize this product for their SMB customers. The account executives had a different approach. Instead of feature feedback their feedback was on what they could upsell and what we would need to add to make it an Enterprise feature. </p>
-                                                <br>
+                                                Signup</h3>
+                                              <p>Simple sign up - facebook api or email with password.</p>
+                                               <br>
                                                 <div class="col-md-12">
-                                                  <img class="img-raised rounded img-fluid" alt="Raised Image" src="./assets/img/whiteboard.jpg">
+                                                  <img class="img-raised rounded img-fluid" alt="Raised Image" src="./assets/img/mtb-signup.png">
                                                 </div>          
                                                 <br>      
-                                              <div class="col-md-12">
-                                                  <img class="img-raised rounded img-fluid" alt="Raised Image" src="./assets/img/ps-flow.png">
-                                                </div>   
-                                                <Br>
-                                                <div class="col-md-12">
-                                                  <img class="img-raised rounded img-fluid" alt="Raised Image" src="./assets/img/group.jpg">
-                                                </div>                                                
+                                                <div style="padding-top: 50px;">
+                                                    <h3 class="title">
+                                                    Preliminary criteria and browsing bikeshops</h3>
+                                                    <p>Survey data suggested that scheduling a bike and paying for the bike are the two hardest steps. I wanted to bring a lot of focus into the ease of locating a bike shop and scheduling a pick up. I followed similar patterns found in other popular booking apps.</p>
+                                                    <p>While a list makes sense here I chose to go with an image-driven grid layout. When you're traveling to new destinations it's cool to see what type of experience premium bikeshops offer. I know when Im looking at demo bikes I care about the customer experience and the visual appeal of the shop since it tends to drive a post shopping experience after bike drop off.</p>
+                                                     <br>
+                                                      <div class="col-md-12">
+                                                        <img class="img-raised rounded img-fluid" alt="Raised Image" src="./assets/img/mtb-book-and-shop.png">
+                                                      </div>          
+                                                      <br>    
+                                                      <div style="padding-top: 20px;">
+                                                          <h3 class="title">
+                                                          Browsing available bikes and selecting a bike</h3>
+                                                          <p>As a user not familiar with every brand and every bike type I thought it was important that bike brands and images were at the forefront. The user could then filter down by price or bike type, travel, components, etc.</p>
+                                                          <p>A user would select a bike by hitting the tile. Once in the detail view they could browse all the components, see if their size is available, and also a preview of the price of the bike for the date range they selected.</p>
+                                                           <br>
+                                                            <div class="col-md-12">
+                                                              <img class="img-raised rounded img-fluid" alt="Raised Image" src="./assets/img/mtb-browse-select.png">
+                                                            </div>          
+                                                            <br>        
+                                                       </div>             
+                                                       <div style="padding-top: 20px;">
+                                                          <h3 class="title">
+                                                         Selecting the bike</h3>
+                                                          <p>While a list makes sense here I chose to go with an image-driven grid layout. When you're traveling to new destinations it's cool to see what type of experience premium bikeshops offer. I know when Im looking at demo bikes I care about the customer experience and the visual appeal of the shop since it tends to drive a post shopping experience after bike drop off.</p>
+                                                           <br>
+                                                            <div class="col-md-12">
+                                                              <img class="img-raised rounded img-fluid" alt="Raised Image" src="./assets/img/mtb-select.png">
+                                                            </div>          
+                                                            <br>        
+                                                       </div>                           
                                               </div>  
                                       </div>
                                     </div>
@@ -553,6 +576,64 @@ $(document).ready(function(){
                         </div>
                    </div>     
                    <!-- end of conceptualization -->
+
+                    <!--     *********     FEATURES 4      *********      -->
+        <!-- <div class="features-4">
+            <div class="row">
+              <div class="col-md-8 ml-auto mr-auto text-center">
+                <h2 class="title">Your life will be much easier</h2>
+                <h5 class="description">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information.</h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-md-12 ml-auto">
+                <div class="info info-horizontal">
+                  <div class="icon icon-info">
+                    <i class="material-icons">code</i>
+                  </div>
+                  <div class="description">
+                    <h4 class="info-title">For Developers</h4>
+                    <p>The moment you use Material Kit, you know you&#x2019;ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
+                  </div>
+                </div>
+                <div class="info info-horizontal">
+                  <div class="icon icon-danger">
+                    <i class="material-icons">format_paint</i>
+                  </div>
+                  <div class="description">
+                    <h4 class="info-title">For Designers</h4>
+                    <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-12">
+                <div class="phone-container">
+                  <img src="./assets/img/sections/iphone2.png">
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-12 mr-auto">
+                <div class="info info-horizontal">
+                  <div class="icon icon-primary">
+                    <i class="material-icons">dashboard</i>
+                  </div>
+                  <div class="description">
+                    <h4 class="info-title">Bootstrap Grid</h4>
+                    <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+                  </div>
+                </div>
+                <div class="info info-horizontal">
+                  <div class="icon icon-success">
+                    <i class="material-icons">view_carousel</i>
+                  </div>
+                  <div class="description">
+                    <h4 class="info-title">Example Pages Included</h4>
+                    <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!--     *********    END FEATURES 4      *********      -->
 
                             <!-- The solution -->
                             <div class="section section-comments" style="margin-top: 80px; background-color: #f5f5f5;">
