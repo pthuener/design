@@ -132,7 +132,7 @@ $(document).ready(function(){
         <div class="header-fix">
           <div class="col-md-12 ml-auto mr-auto text-center">
             <h1 class="title">MTB HERO</h1>
-            <h4>A mobile application that allows users a streamlined experience in demoing hardware from fellow riders or bike shops nearby</h4>
+            <h4>A mobile application that streamlines demoing hardware from local bikeshops when you're traveling abroad. </h4>
             <br>
             <a href="#process" class="btn btn-rose btn-round btn-lg">
             View Project
@@ -168,7 +168,7 @@ $(document).ready(function(){
                 </div>
                 <div class="description">
                   <h4 class="info-title">Overview</h4>
-                  <p>MTB Hero is an app that allows users to find and demo bikes near them. The app would be best leveraged by enthusiasts traveling to exotic bike destinations such as Whistler, Moab, or Sedona. Instead of Googling and calling local bike shops, users can pull up the app and find rentable hardware wherever they are. This could scale nicely to winter sports but as a mountain biker myself I thought it would be appropriate to start with this vertical.
+                  <p>MTB Hero is an app that allows users to find and demo bikes near them. The app would be best leveraged by enthusiasts traveling to exotic bike destinations such as Whistler, Moab, or Sedona. Instead of Googling and calling local bike shops, users can pull up the app and find rentable hardware wherever they are. This idea would scale nicely into the sharable economy model but for now I want to keep it to bikeshops so they can demo their unused fleet.
                     </p>
                   <!-- <p>GoFormz Public Share lets you share a form template with people outside of your account, allowing them to create new forms from this template. There are many situations where this is useful. For instance, you may want to place a Work Order form template’s Public Share URL on your website, allowing customers to start a work order electronically by filling out the incident date and reported problem. The partially completed form can then be routed to your company’s dispatchers, who can review it and assign to a technician as appropriate.</p> -->
                 </div>
@@ -201,7 +201,7 @@ $(document).ready(function(){
                   <div class="row">
                       <div class="col-md-8 ml-auto mr-auto">
                         <h3 class="title">The Problem</h3>
-                        <p style="color: #fff;">There is no streamlined way to demo a bike. It's a pretty niche activity for users to engage in but the workflow is pretty standard. It should be simple but it's not. Instead it takes users 25+ minutes to locate a bikeshop, select a bike, schedule it, and pay for it. How long does it take us to browse and procure takeout on postmates? Or even lock down a place to stay on Hotel tonight? </span>
+                        <p style="color: #fff;">There is no streamlined way to demo a bike. It's a pretty niche activity for users to engage in but the workflow is pretty standard. It should be simple but it's not. Instead it takes users 25+ minutes to locate a bikeshop, select a bike, schedule it, and pay for it. How long does it take us to browse and order takeout on postmates? Or even lock down a place to stay on Hotel tonight?</span>
                       </p>
                         <!-- <p style="color: #fff;">We want to make our product more accessible. Our fremium model dictates 1 user, 1 form template. If you want to send out more templates and more forms you have to become a paid user.<br><br>
                             We had a beta product called public share that the engineers built without any ux guidance. With Public Share anyone with an account can send and distribute as many forms as they please. Instead of tying the account to a paid subscription they would be charged in buckets based on how many form completions they receive, similar to survey monkey.
@@ -326,18 +326,14 @@ $(document).ready(function(){
                           <div class="row">
                               <div class="col-md-8 ml-auto mr-auto">
                                   <h3 class="title">
-                                 Creating and evolving a cross-platform design system</h3>
-                                      <p>GoFormz is a multi-platform product. There are several web-based products, iOS applications, an Android application, and even a Windows application. Developers at GoFormz have a native-first interaction design approach so it was important to respect native design systems while enforcing GoFormz ethos and styles across all of these platforms for consistency, cohesion and brand recognition.</p>
-                                      <p>When I joined GoFormz the product team was undertaking two huge tasks. One was a major code refactor of our web-based applications from node.js to react. This would require updating the design system with new styles and components that would be compatible with new react styles. The second was shaping up the beta Android app so it could be released to production. This would require creating several new interactions and components that would respect and leverage Material Design while maintaining GoFormz brand aesthetics.
+                                Surveying the landscape</h3>
+                                      <p>I myself have tons of frustraitons demoing bikes. I travel to NorCal from SoCal often and it's a pain to Google or call bikeshops in the town I'm traveling to. Once I find a shop that demos bikes I either have to call to find out what bikes they have available, tell them when I want to demo it, and give my credit card info over the phone. IT'S 2019!</p>
+                                      <p>I wanted to make sure that other riders were having similar frustrations to make sure this app was worth designing. I frequent Reddit MTB and figured that would good be a decent place to start outside of my current network. I created a simple 5 question survey and actually received a good amount of data. The survey can be viewed<a href="https://docs.google.com/forms/d/1vH_z-nOi0y33P21yrH3GGMl8b6dZvmYPsdMqr5LW5a4/edit" style="font-weight:bold;"> here.</a>
                                         </p>
-                                      <p>Once the design systems were solidified for web and mobile I could scale them across new Enterprise products we would create later on which are also outlined in this case study.
-                                        </p>
-                                        <h4 class="title">
-                                         Updating styles and components to modernize our webapp from node.js to react</h4>
-                                         <p>While we had a core styleguide in place it was built when our app was built using an older codebase. The styleguide requried drastic updates throughout so that it could be scaled and leveraged across any future products myself or other designers would create.
-                                          </p>
+                                 
+                                      
                                        
-                                  <div class="container">
+                                  <!-- <div class="container">
                                     <div class="row">                                  
                                         <div class="col-md-12" style="padding-top: 80px;">
                                           <img class="img-raised rounded img-fluid" alt="Raised Image" src="./assets/img/forms.png">
@@ -365,11 +361,44 @@ $(document).ready(function(){
                                                                                          
                                             </div>  
                                     </div>
-                                  </div>
+                                  </div> -->
                               </div>   
                           </div>
                       </div>
                  </div>     
+                     <!-- Data measure -->
+                     <div class="testimonials-2 section" style="padding-top: 0px;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-8 ml-auto mr-auto" style="padding-bottom: 80px;">  
+                                  <h3 class="title">Survey results and product viability</h3>  
+                                  <p>The data collected validated my hyphothesis. Users are indeed interested in using the app and they appear to be tech savvy. This data suggests that users would be quite open to using an app such as MTB Hero but the UI would have to be seamless and as low friction as possible to ensure solid adoption rates.</p>
+                                    <br>
+                                   <div class="container">
+                                     <div class="row">                                  
+                                      <div class="col-md-3 ml-auto mr-auto" style="padding-top: 20px;">
+                                       <h2>55%</h2>
+                                       <p>Would demo a high end bike</p>
+                                        </div> 
+                                        <div class="col-md-3 ml-auto mr-auto" style="padding-top: 20px;">
+                                            <h2>60%</h2>
+                                            <p>Would use MTB Hero</p>
+                                            </div>
+                                            <div class="col-md-3 ml-auto mr-auto" style="padding-top: 20px;">
+                                                <h2>62%</h2>
+                                                <p>Found scheduling and payment as hard as finding a bikeshop</p>
+                                                </div>
+                                        <div class="col-md-3 ml-auto mr-auto" style="padding-top: 20px;">
+                                            <h2>30%</h2>
+                                            <p>Of participants make $120k+</p>
+                                            </div>                  
+                                     </div>
+                                  </div>                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- end data mesaure -->
                  <!-- end of conceptualization -->
                      <!-- start android -->
                      <div class="testimonials-2 section" style="background-color: #f5f5f5;">
